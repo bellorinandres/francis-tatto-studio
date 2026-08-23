@@ -8,11 +8,11 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div style="font-family: var(--font-body); font-size: 17px; line-height: 28px;">
+<div class="page">
 
-  <nav class="nav" style="position: sticky; top: 0; z-index: 20; background: var(--color-bg); padding-inline: clamp(20px, 5vw, 72px);">
-    <span class="nav-brand" style="letter-spacing: 0.02em;">Francis Tatto</span>
-    <a class="btn btn-primary" href="#agenda" style="text-decoration: none;">Agendar</a>
+  <nav class="nav">
+    <span class="nav-brand">Francis Tatto</span>
+    <a class="btn btn-primary" href="#agenda">Agendar</a>
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <label for="nav-toggle" class="nav-burger" aria-label="Abrir menu"><span></span></label>
     <div class="nav-links">
@@ -23,139 +23,139 @@
     </div>
   </nav>
 
-  <div style="max-width: 1160px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 72px);">
+  <div class="container">
 
-    <section style="padding: 112px 0 84px;">
-      <p style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); font-feature-settings: 'tnum' 1; margin: 0 0 14px;">Tatuagem em domicílio · Curitiba</p>
-      <h1 style="font-family: var(--font-heading); font-weight: 400; font-size: clamp(46px, 6.4vw, 88px); line-height: 1.08; letter-spacing: -0.01em; margin: 0 0 0 -0.042em;">
-        <span style="display: block;">Fineline, blackwork e botânico,</span>
-        <span style="display: block;">feitos no seu tempo.</span>
+    <section class="hero">
+      <p class="kicker">Tatuagem em domicílio · Curitiba</p>
+      <h1 class="hero-title">
+        <span>Fineline, blackwork e botânico,</span>
+        <span>feitos no seu tempo.</span>
       </h1>
-      <p style="font-size: 17px; line-height: 28px; max-width: 56ch; margin: 42px 0 0; color: color-mix(in srgb, var(--color-text) 82%, transparent);">Sou a Francis. Atendo em domicílio, com todo o material esterilizado levado por mim, em um ambiente tranquilo — o seu. Conversamos a ideia com calma antes de qualquer agulha tocar a pele.</p>
-      <div style="display: flex; gap: var(--space-3); flex-wrap: wrap; margin-top: 28px;">
-        <a class="btn btn-primary" href="#agenda" style="text-decoration: none;">Agendar pelo WhatsApp</a>
-        <a class="btn btn-ghost" href="#portfolio" style="text-decoration: none;">Ver portfólio</a>
+      <p class="hero-lead">Sou a Francis. Atendo em domicílio, com todo o material esterilizado levado por mim, em um ambiente tranquilo — o seu. Conversamos a ideia com calma antes de qualquer agulha tocar a pele.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#agenda">Agendar pelo WhatsApp</a>
+        <a class="btn btn-ghost" href="#portfolio">Ver portfólio</a>
       </div>
     </section>
 
-    <hr class="hr" style="margin: 0;">
+    <hr class="hr">
 
-    <section style="padding: 56px 0 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 28px;">
+    <section class="features-grid">
       <div>
-        <p style="font-family: var(--font-heading); font-size: 26px; line-height: 28px; margin: 0;">Em domicílio</p>
-        <p style="font-size: 15.5px; line-height: 28px; margin: 14px 0 0; color: color-mix(in srgb, var(--color-text) 78%, transparent);">Você não sai de casa. Eu levo maca, materiais e tudo o mais.</p>
+        <p class="feature-title">Em domicílio</p>
+        <p class="copy-muted">Você não sai de casa. Eu levo maca, materiais e tudo o mais.</p>
       </div>
       <div>
-        <p style="font-family: var(--font-heading); font-size: 26px; line-height: 28px; margin: 0;">Material esterilizado</p>
-        <p style="font-size: 15.5px; line-height: 28px; margin: 14px 0 0; color: color-mix(in srgb, var(--color-text) 78%, transparent);">Agulhas e insumos descartáveis, abertos na sua frente.</p>
+        <p class="feature-title">Material esterilizado</p>
+        <p class="copy-muted">Agulhas e insumos descartáveis, abertos na sua frente.</p>
       </div>
       <div>
-        <p style="font-family: var(--font-heading); font-size: 26px; line-height: 28px; margin: 0;">Orçamento antes</p>
-        <p style="font-size: 15.5px; line-height: 28px; margin: 14px 0 0; color: color-mix(in srgb, var(--color-text) 78%, transparent);">Valor fechado no WhatsApp, sem surpresa no dia.</p>
+        <p class="feature-title">Orçamento antes</p>
+        <p class="copy-muted">Valor fechado no WhatsApp, sem surpresa no dia.</p>
       </div>
       <div>
-        <p style="font-family: var(--font-heading); font-size: 26px; line-height: 28px; margin: 0;">Curitiba e região</p>
-        <p style="font-size: 15.5px; line-height: 28px; margin: 14px 0 0; color: color-mix(in srgb, var(--color-text) 78%, transparent);">Combinamos o deslocamento conforme o seu bairro.</p>
+        <p class="feature-title">Curitiba e região</p>
+        <p class="copy-muted">Combinamos o deslocamento conforme o seu bairro.</p>
       </div>
     </section>
 
-    <hr class="hr" style="margin: 0;">
+    <hr class="hr">
 
-    <section id="portfolio" style="padding: 84px 0;">
-      <p style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); margin: 0 0 14px;">Portfólio</p>
-      <h2 style="font-family: var(--font-heading); font-weight: 400; font-size: 34px; line-height: 42px; margin: 0 0 8px -0.042em;">Trabalhos recentes</h2>
-      <p style="font-size: 15.5px; line-height: 28px; max-width: 52ch; margin: 0 0 42px; color: color-mix(in srgb, var(--color-text) 78%, transparent);">Traços finos, folhagens e preto fechado. Peças de cobertura também — mande a foto da tatuagem antiga e vemos o que dá.</p>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px;">
-        <figure class="plate" style="margin: 0; aspect-ratio: 4/5;"><img src="assets/trabalho-1.webp" alt="Foto de trabalho 1" style="width: 100%; height: 100%; object-fit: cover; display: block;"></figure>
-        <figure class="plate" style="margin: 0; aspect-ratio: 4/5;"><img src="assets/trabalho-2.webp" alt="Foto de trabalho 2" style="width: 100%; height: 100%; object-fit: cover; display: block;"></figure>
-        <figure class="plate" style="margin: 0; aspect-ratio: 4/5;"><img src="assets/trabalho-3.webp" alt="Foto de trabalho 3" style="width: 100%; height: 100%; object-fit: cover; display: block;"></figure>
+    <section id="portfolio" class="section">
+      <p class="kicker">Portfólio</p>
+      <h2 class="section-title mb-sm">Trabalhos recentes</h2>
+      <p class="portfolio-lead">Traços finos, folhagens e preto fechado. Peças de cobertura também — mande a foto da tatuagem antiga e vemos o que dá.</p>
+      <div class="portfolio-grid">
+        <figure class="plate plate-portfolio"><img class="plate-img" src="assets/trabalho-1.webp" alt="Foto de trabalho 1"></figure>
+        <figure class="plate plate-portfolio"><img class="plate-img" src="assets/trabalho-2.webp" alt="Foto de trabalho 2"></figure>
+        <figure class="plate plate-portfolio"><img class="plate-img" src="assets/trabalho-3.webp" alt="Foto de trabalho 3"></figure>
       </div>
-      <p style="font-size: 13px; line-height: 28px; margin: 28px 0 0; color: color-mix(in srgb, var(--color-text) 70%, transparent);">Mais trabalhos no <a id="instagram-link" href="#" target="_blank" rel="noopener">Instagram</a> e no <a id="tiktok-link" href="#" target="_blank" rel="noopener">TikTok</a>.</p>
+      <p class="caption-note">Mais trabalhos no <a id="instagram-link" href="#" target="_blank" rel="noopener">Instagram</a> e no <a id="tiktok-link" href="#" target="_blank" rel="noopener">TikTok</a>.</p>
     </section>
 
-    <hr class="hr" style="margin: 0;">
+    <hr class="hr">
 
-    <section id="estilos" style="padding: 84px 0;">
-      <p style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); margin: 0 0 28px;">Estilos</p>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 42px;">
-        <div class="card" style="padding: var(--space-6);">
+    <section id="estilos" class="section">
+      <p class="kicker">Estilos</p>
+      <div class="styles-grid">
+        <div class="card">
           <p class="card-kicker">01</p>
-          <h3 class="card-title" style="font-weight: 400;">Fineline</h3>
-          <p class="card-body" style="text-align: justify; hyphens: auto;">Traço fino e contínuo, sem sombra pesada. Bom para peças pequenas, escritas e desenhos delicados que envelhecem com discrição.</p>
+          <h3 class="card-title">Fineline</h3>
+          <p class="card-body">Traço fino e contínuo, sem sombra pesada. Bom para peças pequenas, escritas e desenhos delicados que envelhecem com discrição.</p>
         </div>
-        <div class="card" style="padding: var(--space-6);">
+        <div class="card">
           <p class="card-kicker">02</p>
-          <h3 class="card-title" style="font-weight: 400;">Blackwork</h3>
-          <p class="card-body" style="text-align: justify; hyphens: auto;">Preto sólido e formas cheias. Contraste forte que se mantém legível anos depois, em peças médias e grandes.</p>
+          <h3 class="card-title">Blackwork</h3>
+          <p class="card-body">Preto sólido e formas cheias. Contraste forte que se mantém legível anos depois, em peças médias e grandes.</p>
         </div>
-        <div class="card" style="padding: var(--space-6);">
+        <div class="card">
           <p class="card-kicker">03</p>
-          <h3 class="card-title" style="font-weight: 400;">Botânico e floral</h3>
-          <p class="card-body" style="text-align: justify; hyphens: auto;">Folhas, ramos e flores desenhados para acompanhar a curva do corpo. Pode vir em fineline ou com preenchimento.</p>
+          <h3 class="card-title">Botânico e floral</h3>
+          <p class="card-body">Folhas, ramos e flores desenhados para acompanhar a curva do corpo. Pode vir em fineline ou com preenchimento.</p>
         </div>
-        <div class="card" style="padding: var(--space-6);">
+        <div class="card">
           <p class="card-kicker">04</p>
-          <h3 class="card-title" style="font-weight: 400;">Cover-up</h3>
-          <p class="card-body" style="text-align: justify; hyphens: auto;">Cobertura de tatuagens antigas. Mande uma foto com boa luz e eu digo com sinceridade o que é possível fazer.</p>
+          <h3 class="card-title">Cover-up</h3>
+          <p class="card-body">Cobertura de tatuagens antigas. Mande uma foto com boa luz e eu digo com sinceridade o que é possível fazer.</p>
         </div>
       </div>
     </section>
 
-    <hr class="hr" style="margin: 0;">
+    <hr class="hr">
 
     <section id="sobre" class="about-grid">
       <div>
-        <p style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); margin: 0 0 14px;">Sobre</p>
-        <h2 style="font-family: var(--font-heading); font-weight: 400; font-size: 34px; line-height: 42px; margin: 0 0 0 -0.042em;">Prazer, eu sou a Francis</h2>
-        <p style="font-size: 15.5px; line-height: 28px; margin: 24px 0 0; max-width: 48ch; text-align: justify; hyphens: auto; color: color-mix(in srgb, var(--color-text) 82%, transparent);">Tatuo em Curitiba e trabalho em domicílio porque acredito que a primeira tatuagem — e a décima — fica melhor quando a pessoa está confortável. Levo todo o material esterilizado, monto o espaço, tatuo e deixo tudo como estava.</p>
-        <p style="font-size: 15.5px; line-height: 28px; margin: 28px 0 0; max-width: 48ch; text-align: justify; hyphens: auto; color: color-mix(in srgb, var(--color-text) 82%, transparent);">Antes de agendar, conversamos: a ideia, o lugar do corpo, o tamanho e o que faz sentido para a sua pele. Sem pressa e sem pressão para fechar no mesmo dia.</p>
+        <p class="kicker">Sobre</p>
+        <h2 class="section-title">Prazer, eu sou a Francis</h2>
+        <p class="about-copy">Tatuo em Curitiba e trabalho em domicílio porque acredito que a primeira tatuagem — e a décima — fica melhor quando a pessoa está confortável. Levo todo o material esterilizado, monto o espaço, tatuo e deixo tudo como estava.</p>
+        <p class="about-copy">Antes de agendar, conversamos: a ideia, o lugar do corpo, o tamanho e o que faz sentido para a sua pele. Sem pressa e sem pressão para fechar no mesmo dia.</p>
       </div>
-      <figure class="plate about-grid-figure" style="margin: 0; width: min(420px, 100%); justify-self: end; aspect-ratio: 1093/1600;">
+      <figure class="plate about-grid-figure">
         <div class="plate-placeholder">Foto da Francis</div>
       </figure>
     </section>
 
-    <hr class="hr" style="margin: 0;">
+    <hr class="hr">
 
-    <section id="cuidados" style="padding: 84px 0;">
-      <p style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); margin: 0 0 14px;">Cuidados pós-tatuagem</p>
-      <h2 style="font-family: var(--font-heading); font-weight: 400; font-size: 34px; line-height: 42px; margin: 0 0 42px -0.042em;">A cicatrização é metade do resultado</h2>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 42px;">
+    <section id="cuidados" class="section">
+      <p class="kicker">Cuidados pós-tatuagem</p>
+      <h2 class="section-title mb-lg">A cicatrização é metade do resultado</h2>
+      <div class="care-grid">
         <div>
-          <p style="font-family: var(--font-heading); font-size: 22px; line-height: 28px; margin: 0;">Nas primeiras horas</p>
-          <p style="font-size: 15.5px; line-height: 28px; margin: 14px 0 0; text-align: justify; hyphens: auto; color: color-mix(in srgb, var(--color-text) 78%, transparent);">Mantenha o filme ou a bandagem pelo tempo que eu indicar. Ao retirar, lave com água corrente e sabonete neutro, sem esfregar.</p>
+          <p class="care-title">Nas primeiras horas</p>
+          <p class="copy-muted">Mantenha o filme ou a bandagem pelo tempo que eu indicar. Ao retirar, lave com água corrente e sabonete neutro, sem esfregar.</p>
         </div>
         <div>
-          <p style="font-family: var(--font-heading); font-size: 22px; line-height: 28px; margin: 0;">Nos primeiros dias</p>
-          <p style="font-size: 15.5px; line-height: 28px; margin: 14px 0 0; text-align: justify; hyphens: auto; color: color-mix(in srgb, var(--color-text) 78%, transparent);">Uma camada fina de pomada, duas a três vezes por dia. Nada de coçar ou puxar casquinha — ela sai sozinha e leva tinta se for forçada.</p>
+          <p class="care-title">Nos primeiros dias</p>
+          <p class="copy-muted">Uma camada fina de pomada, duas a três vezes por dia. Nada de coçar ou puxar casquinha — ela sai sozinha e leva tinta se for forçada.</p>
         </div>
         <div>
-          <p style="font-family: var(--font-heading); font-size: 22px; line-height: 28px; margin: 0;">Nas primeiras semanas</p>
-          <p style="font-size: 15.5px; line-height: 28px; margin: 14px 0 0; text-align: justify; hyphens: auto; color: color-mix(in srgb, var(--color-text) 78%, transparent);">Sem sol direto, piscina, mar, sauna e academia pesada. Depois de cicatrizado, protetor solar é o que mantém o traço firme.</p>
+          <p class="care-title">Nas primeiras semanas</p>
+          <p class="copy-muted">Sem sol direto, piscina, mar, sauna e academia pesada. Depois de cicatrizado, protetor solar é o que mantém o traço firme.</p>
         </div>
         <div>
-          <p style="font-family: var(--font-heading); font-size: 22px; line-height: 28px; margin: 0;">Qualquer dúvida</p>
-          <p style="font-size: 15.5px; line-height: 28px; margin: 14px 0 0; text-align: justify; hyphens: auto; color: color-mix(in srgb, var(--color-text) 78%, transparent);">Me manda mensagem, mesmo depois do atendimento. Vermelhidão forte, calor ou dor crescente merecem uma foto no WhatsApp.</p>
+          <p class="care-title">Qualquer dúvida</p>
+          <p class="copy-muted">Me manda mensagem, mesmo depois do atendimento. Vermelhidão forte, calor ou dor crescente merecem uma foto no WhatsApp.</p>
         </div>
       </div>
     </section>
 
-    <hr class="hr" style="margin: 0;">
+    <hr class="hr">
 
-    <section id="agenda" style="padding: 84px 0;">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 42px clamp(24px, 5vw, 84px); align-items: start;">
+    <section id="agenda" class="section">
+      <div class="agenda-grid">
         <div>
-          <p style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); margin: 0 0 14px;">Agenda</p>
-          <h2 style="font-family: var(--font-heading); font-weight: 400; font-size: 34px; line-height: 42px; margin: 0 0 0 -0.042em;">Conte a sua ideia</h2>
-          <p style="font-size: 15.5px; line-height: 28px; margin: 24px 0 0; max-width: 44ch; text-align: justify; hyphens: auto; color: color-mix(in srgb, var(--color-text) 82%, transparent);">Preencha o que souber e o botão abre o WhatsApp com a mensagem já escrita. Respondo com o orçamento e as datas disponíveis.</p>
-          <p style="font-size: 13px; line-height: 28px; margin: 28px 0 0; color: color-mix(in srgb, var(--color-text) 70%, transparent);">WhatsApp <a id="whatsapp-link" href="#" target="_blank" rel="noopener">41 99612-2540</a><br>Atendimento em domicílio · Curitiba e região</p>
+          <p class="kicker">Agenda</p>
+          <h2 class="section-title">Conte a sua ideia</h2>
+          <p class="agenda-lead">Preencha o que souber e o botão abre o WhatsApp com a mensagem já escrita. Respondo com o orçamento e as datas disponíveis.</p>
+          <p class="caption-note">WhatsApp <a id="whatsapp-link" href="#" target="_blank" rel="noopener">41 99612-2540</a><br>Atendimento em domicílio · Curitiba e região</p>
         </div>
-        <form id="agenda-form" style="display: grid; gap: var(--space-4);">
+        <form id="agenda-form" class="agenda-form">
           <div class="field">
             <label for="fr-ideia">A ideia da tatuagem</label>
             <input class="input" id="fr-ideia" type="text" placeholder="Um ramo de arruda, fineline">
           </div>
-          <div class="form-row" style="display: grid; grid-template-columns: 1fr 140px; gap: var(--space-4);">
+          <div class="form-row">
             <div class="field">
               <label for="fr-local">Local do corpo</label>
               <input class="input" id="fr-local" type="text" placeholder="Antebraço">
@@ -171,21 +171,21 @@
           </div>
           <div class="field">
             <label>É a sua primeira tatuagem?</label>
-            <div class="seg" style="margin-top: var(--space-2);">
+            <div class="seg">
               <button type="button" class="seg-opt" id="fr-primeira-sim" aria-pressed="false">Sim</button>
               <button type="button" class="seg-opt" id="fr-primeira-nao" aria-pressed="false">Não</button>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary btn-block" style="margin-top: var(--space-2);">Enviar no WhatsApp</button>
+          <button type="submit" class="btn btn-primary btn-block">Enviar no WhatsApp</button>
         </form>
       </div>
     </section>
 
-    <hr class="hr" style="margin: 0;">
+    <hr class="hr">
 
-    <footer style="display: flex; flex-wrap: wrap; gap: 14px 42px; justify-content: space-between; align-items: baseline; padding: 56px 0; font-size: 13px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 70%, transparent);">
+    <footer class="site-footer">
       <span>Francis · Tatuagem em domicílio · Curitiba</span>
-      <span style="display: flex; gap: 28px;">
+      <span class="footer-links">
         <a id="whatsapp-link-footer" href="#" target="_blank" rel="noopener">WhatsApp</a>
         <a id="instagram-link-footer" href="#" target="_blank" rel="noopener">Instagram</a>
         <a id="tiktok-link-footer" href="#" target="_blank" rel="noopener">TikTok</a>
