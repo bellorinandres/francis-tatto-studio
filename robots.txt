@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://francis-tatto.vercel.app/sitemap.xml
+Sitemap: https://www.francistattoo.com.br/sitemap.xml
