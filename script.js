@@ -5,6 +5,19 @@
     tiktok: '@francis.tattoo',
   };
 
+  const isES = document.documentElement.lang.toLowerCase().startsWith('es');
+  const T = isES
+    ? {
+        greeting: '¡Hola, Francis! Vengo desde la web y quería reservar un tatuaje.',
+        idea: 'Idea', place: 'Zona del cuerpo', size: 'Tamaño aproximado', unit: 'cm',
+        refs: 'Referencias', first: 'Primer tatuaje', yes: 'sí', no: 'no',
+      }
+    : {
+        greeting: 'Oi, Francis! Vim pelo site e queria agendar uma tatuagem.',
+        idea: 'Ideia', place: 'Local do corpo', size: 'Tamanho aproximado', unit: 'cm',
+        refs: 'Referências', first: 'Primeira tatuagem', yes: 'sim', no: 'não',
+      };
+
   const numero = CONFIG.whatsapp.replace(/\D/g, '');
   const whatsappUrl = 'https://wa.me/' + numero;
   const instagramUrl = 'https://instagram.com/' + CONFIG.instagram.replace(/^@/, '');
@@ -45,12 +58,12 @@
     const tamanho = document.getElementById('fr-tam').value.trim();
     const referencia = document.getElementById('fr-ref').value.trim();
 
-    const linhas = ['Oi, Francis! Vim pelo site e queria agendar uma tatuagem.'];
-    if (ideia) linhas.push('Ideia: ' + ideia);
-    if (local) linhas.push('Local do corpo: ' + local);
-    if (tamanho) linhas.push('Tamanho aproximado: ' + tamanho + ' cm');
-    if (referencia) linhas.push('Referências: ' + referencia);
-    if (primeira !== null) linhas.push('Primeira tatuagem: ' + (primeira ? 'sim' : 'não'));
+    const linhas = [T.greeting];
+    if (ideia) linhas.push(T.idea + ': ' + ideia);
+    if (local) linhas.push(T.place + ': ' + local);
+    if (tamanho) linhas.push(T.size + ': ' + tamanho + ' ' + T.unit);
+    if (referencia) linhas.push(T.refs + ': ' + referencia);
+    if (primeira !== null) linhas.push(T.first + ': ' + (primeira ? T.yes : T.no));
 
     const mensagem = linhas.join('\n');
     window.open(whatsappUrl + '?text=' + encodeURIComponent(mensagem), '_blank');
