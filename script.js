@@ -18,7 +18,7 @@
     el.href = tiktokUrl;
     if (el.id === 'tiktok-link-footer') el.textContent = 'TikTok ' + CONFIG.tiktok;
   });
-  document.querySelectorAll('#whatsapp-link, #whatsapp-link-footer').forEach((el) => {
+  document.querySelectorAll('#whatsapp-link, #whatsapp-link-footer, #whatsapp-link-float').forEach((el) => {
     el.href = whatsappUrl;
   });
 
