@@ -35,6 +35,11 @@
     el.href = whatsappUrl;
   });
 
+  const navToggle = document.getElementById('nav-toggle');
+  document.querySelectorAll('.nav-links a').forEach((el) => {
+    el.addEventListener('click', () => { if (navToggle) navToggle.checked = false; });
+  });
+
   const form = document.getElementById('agenda-form');
   const simBtn = document.getElementById('fr-primeira-sim');
   const naoBtn = document.getElementById('fr-primeira-nao');
