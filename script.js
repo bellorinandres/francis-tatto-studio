@@ -1,6 +1,6 @@
 (() => {
   const CONFIG = {
-    whatsapp: '5541996122540',
+    whatsapp: '5541999006265',
     instagram: '@francis.tattoo',
     tiktok: '@francis.tattoo',
   };
