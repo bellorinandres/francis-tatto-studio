@@ -109,4 +109,22 @@
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
+  <url>
+    <loc>https://www.francistattoo.com.br/blog/precos-tatuagem-fine-line-curitiba/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://www.francistattoo.com.br/blog/precos-tatuagem-fine-line-curitiba/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.francistattoo.com.br/es/blog/precios-tatuaje-fine-line-curitiba/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.francistattoo.com.br/blog/precos-tatuagem-fine-line-curitiba/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.francistattoo.com.br/es/blog/precios-tatuaje-fine-line-curitiba/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://www.francistattoo.com.br/blog/precos-tatuagem-fine-line-curitiba/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.francistattoo.com.br/es/blog/precios-tatuaje-fine-line-curitiba/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.francistattoo.com.br/blog/precos-tatuagem-fine-line-curitiba/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
 </urlset>
