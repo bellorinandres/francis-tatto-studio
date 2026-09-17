@@ -1,8 +1,7 @@
 (() => {
   const CONFIG = {
     whatsapp: '5541999006265',
-    instagram: '@francis.tattoo',
-    tiktok: '@francis.tattoo',
+    tiktok: '@francistattoo_',
   };
 
   const isES = document.documentElement.lang.toLowerCase().startsWith('es');
@@ -20,13 +19,8 @@
 
   const numero = CONFIG.whatsapp.replace(/\D/g, '');
   const whatsappUrl = 'https://wa.me/' + numero;
-  const instagramUrl = 'https://instagram.com/' + CONFIG.instagram.replace(/^@/, '');
-  const tiktokUrl = 'https://tiktok.com/@' + CONFIG.tiktok.replace(/^@/, '');
+  const tiktokUrl = 'https://www.tiktok.com/@' + CONFIG.tiktok.replace(/^@/, '');
 
-  document.querySelectorAll('#instagram-link, #instagram-link-footer').forEach((el) => {
-    el.href = instagramUrl;
-    if (el.id === 'instagram-link-footer') el.textContent = 'Instagram ' + CONFIG.instagram;
-  });
   document.querySelectorAll('#tiktok-link, #tiktok-link-footer').forEach((el) => {
     el.href = tiktokUrl;
     if (el.id === 'tiktok-link-footer') el.textContent = 'TikTok ' + CONFIG.tiktok;
