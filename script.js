@@ -45,6 +45,7 @@
   const naoBtn = document.getElementById('fr-primeira-nao');
   let primeira = null;
 
+  if (form && simBtn && naoBtn) {
   simBtn.addEventListener('click', () => {
     primeira = true;
     simBtn.setAttribute('aria-pressed', 'true');
@@ -73,4 +74,5 @@
     const mensagem = linhas.join('\n');
     window.open(whatsappUrl + '?text=' + encodeURIComponent(mensagem), '_blank');
   });
+  }
 })();
