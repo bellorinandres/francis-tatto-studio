@@ -2,7 +2,7 @@
 
 Site oficial do estúdio Francis Tattoo — tatuagens fine line, botânico, blackwork e cover-up em Curitiba, Brasil.
 
-🔗 [franciststudio.com](https://franciststudio.com) *(ajustar link real)*
+🔗 [francistattoo.com.br](https://www.francistattoo.com.br/)
 
 ## Sobre
 
