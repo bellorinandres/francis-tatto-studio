@@ -33,6 +33,10 @@
   document.querySelectorAll('.nav-links a').forEach((el) => {
     el.addEventListener('click', () => { if (navToggle) navToggle.checked = false; });
   });
+  // Escape cierra el menú móvil y devuelve el foco al botón
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navToggle && navToggle.checked) { navToggle.checked = false; navToggle.focus(); }
+  });
 
   const form = document.getElementById('agenda-form');
   const simBtn = document.getElementById('fr-primeira-sim');
