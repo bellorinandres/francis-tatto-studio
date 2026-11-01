@@ -29,6 +29,14 @@
     el.href = whatsappUrl;
   });
 
+  // Medición GA4: clic a WhatsApp, por enlace directo y por envío del formulario
+  const track = (where) => {
+    if (typeof gtag === 'function') gtag('event', 'whatsapp_click', { link_location: where, language: isES ? 'es' : 'pt' });
+  };
+  document.querySelectorAll('#whatsapp-link, #whatsapp-link-footer, #whatsapp-link-float').forEach((el) => {
+    el.addEventListener('click', () => track(el.id.replace('whatsapp-link', '').replace(/^-/, '') || 'contacto'));
+  });
+
   const navToggle = document.getElementById('nav-toggle');
   document.querySelectorAll('.nav-links a').forEach((el) => {
     el.addEventListener('click', () => { if (navToggle) navToggle.checked = false; });
@@ -70,6 +78,7 @@
     if (primeira !== null) linhas.push(T.first + ': ' + (primeira ? T.yes : T.no));
 
     const mensagem = linhas.join('\n');
+    track('formulario');
     window.open(whatsappUrl + '?text=' + encodeURIComponent(mensagem), '_blank');
   });
   }
